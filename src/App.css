@@ -1,33 +1,82 @@
 .App {
-  text-align: center;
+  margin-top: 50px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.Wrapper {
+  width: 700px;
+  padding: 0px 30px;
+  margin: 0px auto 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Tabs {
+
+}
+
+.Tabs__menu {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Tabs__menu__item {
+  padding: 8px 12px;
+  border: 1px solid #e1e1e1;
+  border-bottom: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Tabs__menu__item:hover {
+  cursor: pointer;
 }
+
+.Tabs__menu__item:not(:last-child) {
+  border-right: none;
+}
+
+.Tabs__menu__item--active {
+  color: #2525ff;
+}
+
+.Tabs__body {
+  padding: 8px 12px;
+  border: 1px solid #e1e1e1;
+}
+
+.Tabs__content {
+  display: none;
+}
+.Tabs__content--active {
+  display: block;
+}
+
+.Accordion {
+
+}
+
+.Accordion__item {
+  border: 1px solid #e1e1e1;
+}
+
+.Accordion__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.Accordion__menu {
+  padding: 8px 12px;
+}
+
+.Accordion__menu:hover {
+  cursor: pointer;
+}
+
+.Accordion__content {
+  display: none;
+  padding: 8px 12px;
+}
+
+.Accordion__item--active .Accordion__menu {
+  border-bottom: 1px solid #e1e1e1;
+  color: #2525ff;
+}
+
+.Accordion__item--active .Accordion__content {
+  display: block;
+}
+
